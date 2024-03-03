@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow-sm position-sticky sticky-top">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark shadow rounded-bottom-4 position-sticky sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand text-uppercase" href={"/"}>
+          <Link className="navbar-brand text-uppercase" to={"/"}>
             {/* <i>LOGO</i> */}
             <img
               src="assets/images/logos/itransport_logo_red_tr.png"
@@ -14,7 +14,7 @@ const Header = () => {
               width="155rem"
               height="auto"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

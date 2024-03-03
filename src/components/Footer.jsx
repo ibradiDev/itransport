@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       {/* FIN MODAL */}
-      <footer className="footer section-sm bg-black mt-2 rounded-top-2">
+      <footer className="footer section-sm bg-black mt-2 rounded-top-4">
         <div className="container py-4">
           <div className="row justify-content-between">
             <div className="col-lg-2 col-md-4 col-6 mb-4">
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-4 col-6 mb-4">
+            <div className="col-lg-3 col-md-4 col-6 mb-4">
               <div className="">
                 <h6 className="mb-4 text-secondary text-uppercase">CONTACTS</h6>
                 <ul className="list-unstyled">
@@ -93,7 +93,7 @@ const Footer = () => {
                       className="nav-link text-white"
                     >
                       <i className="fas fa-mail-bulk text-white"></i>{" "}
-                      <span>itrans@gmail.com</span>
+                      <span>itransport@gmail.com</span>
                     </Link>
                   </li>
                 </ul>
