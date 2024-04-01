@@ -34,7 +34,22 @@ const Contact = () => {
                   ☎ TELEPHONE
                 </h3>
                 <span className="d-block mt-2 text-muted">
-                  +225 05-55-39-14-99
+                  <Link
+                    to={"tel:+2250555391499"}
+                    className="nav-link"
+                    target="_blank"
+                  >
+                    +225 05-55-39-14-99
+                  </Link>
+                </span>
+                <span className="d-block mt-2 text-muted">
+                  <Link
+                    to={"tel:+2250102959569"}
+                    className="nav-link"
+                    target="_blank"
+                  >
+                    +225 01-02-95-95-69
+                  </Link>
                 </span>
               </div>
               <div>
@@ -82,7 +97,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <form action="#" method="post">
+              <form action="#">
                 <div className="mb-3">
                   <label
                     htmlFor="fullName"
@@ -129,7 +144,7 @@ const Contact = () => {
                 <div>
                   <button
                     className="btn btn-primary rounded-5 text-sm sm:text-base font-weight-bold px-4 py-2"
-                    type="submit"
+                    type="reset"
                   >
                     Envoyer <i className="fab fa-telegram-plane ml-2"></i>
                   </button>

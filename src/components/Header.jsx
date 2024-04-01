@@ -32,7 +32,7 @@ const Header = () => {
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <Link className="nav-link row text-center" to={"/"}>
-                  <i className="fa fa-home"></i>
+                  {/* <i className="fa fa-home"></i> */}
                   <span>Accueil</span>
                 </Link>
               </li>
@@ -46,14 +46,14 @@ const Header = () => {
 
               <li id="contactUs" className="nav-item">
                 <Link to={"contact-us"} className="nav-link row text-center">
-                  <i className="fa fa-address-book"></i>
+                  {/* <i className="fa fa-address-book"></i> */}
                   <span>Nous Contacter</span>
                 </Link>
               </li>
 
               <li id="aboutUs" className="nav-item">
                 <Link to={"about-us"} className="nav-link row text-center">
-                  <i className="fas fa-street-view"></i>
+                  {/* <i className="fas fa-street-view"></i> */}
                   <span>A propos</span>
                 </Link>
               </li>

@@ -35,7 +35,7 @@ const Footer = () => {
       <footer className="footer section-sm bg-black mt-2 rounded-top-4">
         <div className="container py-4">
           <div className="row justify-content-between">
-            <div className="col-lg-2 col-md-4 col-6 mb-4">
+            <div className="col-lg-2 col-md-4 col-5 mb-4">
               <div className="">
                 <h6 className="mb-4 text-secondary text-uppercase">
                   LOCALITES
@@ -53,16 +53,40 @@ const Footer = () => {
                       <span>Côte d'Ivoire</span>
                     </div>
                     <ul className="text-secondary">
-                      <li className="nav-item">Abidjan</li>
-                      <li className="nav-item">Toumodi</li>
-                      <li className="nav-item">Yamoussoukro</li>
+                      <li className="nav-item">
+                        <Link
+                          to={"https://g.co/kgs/SgQHPej"}
+                          target="_blank"
+                          className="nav-link"
+                        >
+                          Abidjan
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to={"https://g.co/kgs/YrrAk8s"}
+                          target="_blank"
+                          className="nav-link"
+                        >
+                          Toumodi
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to={"https://g.co/kgs/FnyK6Y8"}
+                          target="_blank"
+                          className="nav-link"
+                        >
+                          Yamoussoukro
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-4 col-6 mb-4">
+            <div className="col-lg-3 col-md-4 col-7 mb-4">
               <div className="">
                 <h6 className="mb-4 text-secondary text-uppercase">CONTACTS</h6>
                 <ul className="list-unstyled">
@@ -92,14 +116,14 @@ const Footer = () => {
                       to={"mailto:itrans@gmail.com"}
                       className="nav-link text-white"
                     >
-                      <i className="fas fa-mail-bulk text-white"></i>{" "}
+                      <i className="fas fa-mail-bulk text-warning"></i>{" "}
                       <span>itransport@gmail.com</span>
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-md-12">
+            <div className="col-lg-4 col-md-12 col-8">
               <h5 className="mb-4">
                 <Link to={"/"}>
                   <img
@@ -111,12 +135,7 @@ const Footer = () => {
                 </Link>
               </h5>
               <div className="pe-0 pe-xl-5">
-                <form
-                  action="#!"
-                  method="post"
-                  name="mc-embedded-subscribe-form"
-                  target="_blank"
-                >
+                <form>
                   <div className="input-group mb-3 rounded-4">
                     <input
                       type="text"
@@ -147,9 +166,7 @@ const Footer = () => {
           <hr style={{ color: "white" }} />
           <div className="row align-items-center text-center justify-content-center text-md-start">
             <div className="col-lg-4 col-md-6 mt-4 mt-lg-0 text-secondary">
-              <small>
-                Copyright © 2023-2024 Ibradi.. Tous droits reservés.
-              </small>
+              <small>Copyright © 2023-2024 - Tous droits reservés.</small>
             </div>
             <div className="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
               <ul className="list-unstyled list-inline mb-0 social-icons">
