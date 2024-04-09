@@ -175,7 +175,7 @@ const Home = () => {
               </div>
               <div className="">
                 <h3 className="font-weight-light h5">
-                  <u>Conduite de Clients</u>
+                  <u>Faites-vous conduire</u>
                 </h3>
                 <p>
                   Offrez-vous un service fiable et confortable pour vos
@@ -185,9 +185,9 @@ const Home = () => {
             </div>
 
             <div className="col-md-4 text-center p-3 p-md-5 bg-white">
-              <div className="mb-4 shadow rounded-5">
+              <div className="mb-4 rounded-5">
                 <img
-                  src="assets/images/wheels.jpg"
+                  src="assets/images/driver_logo.jpg"
                   alt=""
                   className="mx-auto img-fluid rounded"
                 />
@@ -209,9 +209,9 @@ const Home = () => {
             </div>
 
             <div className="col-md-4 text-center p-3 p-md-5 bg-white">
-              <div className="mb-4 shadow rounded-5">
+              <div className="mb-4 rounded-5">
                 <img
-                  src="assets/images/truck.jpg"
+                  src="assets/images/itransport_goods.png"
                   alt=""
                   className="mx-auto img-fluid rounded"
                 />

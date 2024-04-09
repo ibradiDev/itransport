@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { addToNewsletters } from "../App";
 
 const Footer = () => {
+  const [email, setEmail] = useState({ email: "" });
+
+  const handleEmailChange = (e) => {
+    setEmail({ email: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      addToNewsletters(email);
+      document.getElementById("subscriptionForm").reset();
+    } catch (err) {
+      console.error("Error:", err);
+    }
+  };
   return (
     <>
       {/* DEBUT MODAL */}
@@ -134,22 +150,32 @@ const Footer = () => {
                   {/* <i>LOGO</i> */}
                 </Link>
               </h5>
+
               <div className="pe-0 pe-xl-5">
-                <form>
+                <form
+                  onSubmit={handleSubmit}
+                  method="post"
+                  id="subscriptionForm"
+                >
+                  <div
+                    id="subscriptionInfo"
+                    className="alert d-none text-center"
+                  ></div>
+
                   <div className="input-group mb-3 rounded-4">
                     <input
-                      type="text"
+                      type="email"
+                      onChange={handleEmailChange}
+                      name="email"
                       className="form-control shadow-none bg-white border-end-0"
                       placeholder="Email address"
                     />
                     <span className="input-group-text border-0 p-0">
                       <button
                         className="input-group-text rounded-3 border-3 bg-primary"
-                        type="reset"
-                        name="subscribe"
+                        type="button"
                         aria-label="Subscribe for Newsletter"
-                        // data-bs-toggle="modal"
-                        // data-bs-target="#successModal"
+                        onClick={handleSubmit}
                       >
                         <i className="text-white fas fa-arrow-right"></i>
                       </button>
@@ -163,6 +189,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
+
           <hr style={{ color: "white" }} />
           <div className="row align-items-center text-center justify-content-center text-md-start">
             <div className="col-lg-4 col-md-6 mt-4 mt-lg-0 text-secondary">
